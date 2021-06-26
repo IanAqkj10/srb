@@ -1,0 +1,19 @@
+server:
+  port: 8091
+
+spring:
+  profiles:
+    active: dev # 环境设置
+  application:
+    name: service-oss # 服务名
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+
+aliyun:
+  oss:
+    endpoint: oss-cn-guangzhou.aliyuncs.com
+    keyId: LTAI5tPUfoPNgYysutWqB3pq
+    keySecret: yZZIsnrkGeKk5wNZ4Ul6ZDRWDYddlY
+    bucketName: iansave
